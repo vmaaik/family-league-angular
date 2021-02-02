@@ -12,6 +12,8 @@ import {GeneralInterceptor} from './shared/general.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import {MaterialModule} from './material.module';
+import {RoutingModule} from './routing.module';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
     ChampionComponent,
     CharityComponent,
     HeaderComponent,
-    SidenavComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    RoutingModule
   ],
   providers: [
     {

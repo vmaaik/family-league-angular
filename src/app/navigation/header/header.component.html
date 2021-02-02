@@ -1,1 +1,18 @@
-<p>header works!</p>
+<mat-toolbar class="mat-toolbar-custom">
+  <div>
+<!--    (click)="sidenav.toggle()-->
+    <button mat-icon-button >
+      <mat-icon>short_text</mat-icon>
+    </button>
+  </div>
+  <div>
+    <!--        <a routerLink="/">Logo</a>-->
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="center">
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li><a routerLink="/round">RUNDA</a></li>
+      <li><a routerLink="/season">SEZON</a></li>
+      <li><a routerLink="/calendar">KALENDARZ</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

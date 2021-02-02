@@ -1,0 +1,45 @@
+.mat-toolbar-custom{
+  background-color: #FFFBE6;
+  top: 0;
+  position: sticky;
+}
+
+a:hover,
+a:active{
+  /*font-weight: bold;*/
+  color: #4E7E6F;
+  /*font-weight: 700;*/
+  font-weight: bold;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  /*color: #B9E4C9;*/
+  color: #37966F;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  font-size: 16px;
+  font-family: 'Lekton', sans-serif;
+  /*font-weight: 700;*/
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.icon {
+  font-size: 24px;
+  color: #FD5523;
+}
+
+.font-mic{
+  color:  #FD5523;
+  letter-spacing: 1px;
+
+  font-size: 14px;
+  font-family: 'Lekton', sans-serif;
+}
