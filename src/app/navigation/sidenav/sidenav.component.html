@@ -1,1 +1,33 @@
-<p>sidenav works!</p>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation" >
+    <mat-nav-list fxFlex fxLayout fxLayoutAlign="center center">
+      <div>
+        <a mat-list-item routerLink="/round" (click)="sidenav.close()">
+          <mat-icon style="color: red">local_fire_department</mat-icon>
+        </a>
+
+        <a mat-list-item routerLink="/season" (click)="sidenav.close()">
+          <mat-icon>leaderboard</mat-icon>
+        </a>
+
+        <a mat-list-item routerLink="/calendar" (click)="sidenav.close()">
+          <mat-icon>today</mat-icon>
+        </a>
+
+        <a mat-list-item routerLink="/champion" (click)="sidenav.close()">
+          <mat-icon>emoji_events</mat-icon>
+        </a>
+
+        <a mat-list-item routerLink="/charity" (click)="sidenav.close()">
+          <mat-icon>pets</mat-icon>
+        </a>
+      </div>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
